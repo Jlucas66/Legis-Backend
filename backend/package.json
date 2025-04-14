@@ -1,0 +1,28 @@
+{
+  "name": "legis",
+  "version": "1.0.0",
+  "description": "Projeto para implementação de um sistema para busca de normas.",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /backend/src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jlucas66/Legis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jlucas66/Legis/issues"
+  },
+  "homepage": "https://github.com/Jlucas66/Legis#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
