@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());   
 
-const normasRoutes = require('./routes/normasRoutes');
+const normasRoutes = require('./routes/normasRoutes.js');
 app.use("/Normas", normasRoutes);
 
 module.exports = app;

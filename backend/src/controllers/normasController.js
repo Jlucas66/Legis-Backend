@@ -1,9 +1,10 @@
 const e = require("cors");
 const fs = require("fs");
 const path = require("path");
-const normas = path.join(__dirname, "../data/norma.json");
+const normasPath = path.join(__dirname, "../data/normas.json");
+const categoriasPath = path.join(__dirname, "../data/categorias.json");
+const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json");
 
-//aqui teria que fazer um crud com o banco de dados(?)'
 
 
 exports.lerNormas = () => {
@@ -11,13 +12,23 @@ exports.lerNormas = () => {
   return JSON.parse(data);
 }
 exports.salvarNormas = (normas) => {
-    fs.writeFileSync(filePath, JSON.stringify(normas, null, 2));
+    fs.writeFileSync(normas, JSON.stringify(normas, null, 2));
 };
 
 exports.listarNormas = (req, res) => {
     try {
-        const normas = lerNormas();
-        res.json(normas);
+        const rawData = fs.readFileSync(normasPath, "utf8");
+        const normas = JSON.parse(rawData);
+    
+        const normasFiltradas = normas.map( normas => ({
+            data: normas.data,
+            ementa: normas.ementa,
+            numero: normas.numero,
+            tipo: normas.tipoCategoria?.nome || "N/A",
+            orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
+            link: normas.link,
+        }));
+        res.json(normasFiltradas);
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });
@@ -32,7 +43,7 @@ exports.adicionarNorma = (req, res) => {
             return res.status(400).json({ message: "Preencha todos os campos obrigatórios." });
         }
 
-        const normas = lerNormas();
+        const normas = exports.lerNormas();
         const novaNorma = {
             id: normas.length > 0 ? normas[normas.length - 1].id + 1 : 1,
             orgao,
@@ -51,12 +62,12 @@ exports.adicionarNorma = (req, res) => {
 
 exports.buscarNormaPorNumero = (req, res) => {
     const { orgao, tipo, numero } = req.query;
-    const normas = lerNormas();
+    const normas = exports.lerNormas();
 
-    const resultado = normas.filter(norma => {
-        return (!orgao || norma.orgao.toLowerCase().includes(orgao.toLowerCase())) &&
-               (!tipo || norma.tipo.toLowerCase().includes(tipo.toLowerCase())) &&
-               (!numero || norma.numero.toString() === numero.toString());
+    const resultado = normas.filter(normas => {
+        return (!orgao || normas.orgao.toLowerCase().includes(orgao.toLowerCase())) &&
+               (!tipo || normas.tipo.toLowerCase().includes(tipo.toLowerCase())) &&
+               (!numero || normas.numero.toString() === numero.toString());
   });
 
   res.json(resultado);
@@ -64,7 +75,7 @@ exports.buscarNormaPorNumero = (req, res) => {
 
 exports.modificarNorma = (req, res) => {
     const id = parseInt(req.params.id);
-    const normas = lerNormas();
+    const normas = exports.lerNormas();
     const index = normas.findIndex(n => n.id === id);
   
     if (index === -1) {
@@ -83,7 +94,7 @@ exports.modificarNorma = (req, res) => {
 exports.excluirNorma = (req, res) => {
     try{
         const id = parseInt(req.params.id);
-        const normas = lerNormas();
+        const normas = exports.lerNormas();
         const novaLista = normas.filter(n => n.id !== id);
       
         if (novaLista.length === normas.length) {
@@ -97,8 +108,8 @@ exports.excluirNorma = (req, res) => {
     }
 };
 
-cexports.gerarRelatorioPDF = (req, res) => {
-    const normas = lerNormas();
+exports.gerarRelatorioPDF = (req, res) => {
+    const normas = exports.lerNormas();
     const doc = new PDFDocument();
   
     res.setHeader('Content-Type', 'application/pdf');
@@ -111,11 +122,11 @@ cexports.gerarRelatorioPDF = (req, res) => {
   
     normas.forEach((norma, i) => {
       doc.fontSize(12)
-        .text(`Órgão: ${norma.orgao}`)
-        .text(`Tipo: ${norma.tipo}`)
-        .text(`Número: ${norma.numero}`)
-        .text(`Data: ${norma.data}`)
-        .text(`Ementa: ${norma.ementa}`)
+        .text(`Órgão: ${normas.orgao}`)
+        .text(`Tipo: ${normas.tipo}`)
+        .text(`Número: ${normas.numero}`)
+        .text(`Data: ${normas.data}`)
+        .text(`Ementa: ${normas.ementa}`)
         .moveDown();
       if (i < normas.length - 1) doc.moveDown();
     });
