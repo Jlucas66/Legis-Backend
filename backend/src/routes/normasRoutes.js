@@ -13,5 +13,6 @@ router.post("/", normasController.adicionarNorma);
 router.put("/:numero", normasController.modificarNorma);
 router.get("/:numero", normasController.buscarNormaPorNumero);
 router.delete("/:numero", normasController.excluirNorma);
+router.get("/relatorio", normasController.gerarRelatorioPDF);
 
 module.exports = router;

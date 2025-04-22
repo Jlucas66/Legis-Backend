@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Jlucas66/Legis#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "pdfkit": "^0.17.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
