@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Normas API!');
 });
 
+const loginRoutes = require('./routes/login');
+app.use('/api', loginRoutes);
+
 
 const PORT = 3000;
 app.listen(PORT, () => {
