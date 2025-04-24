@@ -8,8 +8,8 @@ const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json"
 
 
 exports.lerNormas = () => {
-    const data = fs.readFileSync(normas, "utf8");
-  return JSON.parse(data);
+    const data = fs.readFileSync(normasPath, 'utf8');
+  return JSON.parse(data, 'utf8');
 }
 exports.salvarNormas = (normas) => {
     fs.writeFileSync(normas, JSON.stringify(normas, null, 2));
@@ -17,7 +17,7 @@ exports.salvarNormas = (normas) => {
 
 exports.listarNormas = (req, res) => {
     try {
-        const rawData = fs.readFileSync(normasPath, "utf8");
+        const rawData = fs.readFileSync(normasPath, 'utf8');
         const normas = JSON.parse(rawData);
     
         const normasFiltradas = normas.map( normas => ({
@@ -28,7 +28,28 @@ exports.listarNormas = (req, res) => {
             orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
             link: normas.link,
         }));
-        res.json(normasFiltradas);
+        res.json(normasFiltradas, 'utf8');
+    } catch (error) {
+        console.error("Erro ao listar normas:", error);
+        res.status(500).json({ message: "Erro ao listar normas." });
+    }
+};
+
+exports.listarNormasAdmin = (req, res) => {
+    try {
+        const rawData = fs.readFileSync(normasPath, 'utf8');
+        const normas = JSON.parse(rawData);
+    
+        const normasFiltradasAdmin = normas.map( normas => ({
+            data: normas.data,
+            ementa: normas.ementa,
+            numero: normas.numero,
+            tipo: normas.tipoCategoria?.nome || "N/A",
+            orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
+            status: normas.ativo ? "Ativo" : "Inativo",
+            link: normas.link,
+        }));
+        res.json(normasFiltradasAdmin, 'utf8');
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });

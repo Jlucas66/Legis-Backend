@@ -9,10 +9,11 @@ router.use((req, res, next) => {
 });
 
 router.get("/", normasController.listarNormas);
-router.post("/", normasController.adicionarNorma);
-router.put("/:numero", normasController.modificarNorma);
-router.get("/:numero", normasController.buscarNormaPorNumero);
-router.delete("/:numero", normasController.excluirNorma);
+router.get("/admin", normasController.listarNormasAdmin);
+router.post("/adicionar", normasController.adicionarNorma);
+router.put("/modificar", normasController.modificarNorma);
+router.get("/busca", normasController.buscarNormaPorNumero);
+router.delete("/excluir", normasController.excluirNorma);
 router.get("/relatorio", normasController.gerarRelatorioPDF);
 
 module.exports = router;
