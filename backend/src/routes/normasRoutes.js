@@ -13,7 +13,6 @@ router.get("/admin", normasController.listarNormasAdmin);
 router.post("/adicionar", normasController.adicionarNorma);
 router.put("/modificar", normasController.modificarNorma);
 router.get("/busca", normasController.buscarNormaPorNumero);
-router.delete("/excluir", normasController.excluirNorma);
-router.get("/relatorio", normasController.gerarRelatorioPDF);
+router.delete("/excluir/:id", normasController.excluirNorma);
 
 module.exports = router;
