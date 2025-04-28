@@ -12,7 +12,7 @@ exports.lerNormas = () => {
     return JSON.parse(data, 'utf8');
 }
 exports.salvarNormas = (normas) => {
-    fs.writeFileSync(normas, JSON.stringify(normas, null, 2), 'utf8');
+    fs.writeFileSync(normasPath, JSON.stringify(normas, null, 2), 'utf8');
 };
 
 exports.listarNormas = (req, res) => {
@@ -48,10 +48,11 @@ exports.listarNormasAdmin = (req, res) => {
             numero: normas.numero,
             tipo: normas.tipoCategoria?.nome || "N/A",
             orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
-            status: normas.ativo ? "Ativo" : "Inativo",
+            ativo: normas.ativo,
+            statusDisponivel: normas.statusDisponivel ? "Ativo" : "Inativo",
             link: normas.link,
         }));
-        res.json(normasFiltradasAdmin, 'utf8');
+        res.json(normasFiltradasAdmin.filter(normas => normas.ativo === true ), 'utf8');
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });
@@ -118,12 +119,7 @@ exports.excluirNorma = (req, res) => {
     try{
         const id = parseInt(req.params.id);
         const normas = exports.lerNormas();
-        // const { emailUsuario} = req.body;
-        // console.log('Email do usuário:', emailUsuario);
         const novaIndex = normas.findIndex(n =>n.id === id);
-        // console.log('ID recebido:', id);
-        // console.log('Normas carregadas:', normas);
-        // console.log('Índice encontrado:', novaIndex);
 
       
         if (novaIndex === -1) {
@@ -131,12 +127,9 @@ exports.excluirNorma = (req, res) => {
         }
 
         normas[novaIndex].ativo = false;
-        // normas[novaIndex].desativadoPor = emailUsuario || "Usuário desconhecido."
-      
-        exports.salvarNormas(normas);
 
-        const normasAposDelete = normas.filter(n => n.ativo !== false);
-        res.status(200).send(normasAposDelete);
+        exports.salvarNormas(normas);
+        res.status(200).send(normas)
     } catch (error) {
         res.status(500).json({ message: "Erro ao excluir norma." });
     }
