@@ -15,4 +15,6 @@ router.put("/modificar", normasController.modificarNorma);
 router.get("/busca", normasController.buscarNormaPorNumero);
 router.delete("/excluir/:id", normasController.excluirNorma);
 
+
+
 module.exports = router;

@@ -9,10 +9,10 @@ const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json"
 
 exports.lerNormas = () => {
     const data = fs.readFileSync(normasPath, 'utf8');
-  return JSON.parse(data, 'utf8');
+    return JSON.parse(data, 'utf8');
 }
 exports.salvarNormas = (normas) => {
-    fs.writeFileSync(normas, JSON.stringify(normas, null, 2));
+    fs.writeFileSync(normas, JSON.stringify(normas, null, 2), 'utf8');
 };
 
 exports.listarNormas = (req, res) => {
@@ -27,6 +27,7 @@ exports.listarNormas = (req, res) => {
             numero: normas.numero,
             tipo: normas.tipoCategoria?.nome || "N/A",
             orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
+            link: normas.link
         }));
         res.json(normasFiltradas, 'utf8');
     } catch (error) {
@@ -117,17 +118,25 @@ exports.excluirNorma = (req, res) => {
     try{
         const id = parseInt(req.params.id);
         const normas = exports.lerNormas();
+        // const { emailUsuario} = req.body;
+        // console.log('Email do usuário:', emailUsuario);
         const novaIndex = normas.findIndex(n =>n.id === id);
+        // console.log('ID recebido:', id);
+        // console.log('Normas carregadas:', normas);
+        // console.log('Índice encontrado:', novaIndex);
 
       
-        if (normaIndex === -1) {
+        if (novaIndex === -1) {
             return res.status(404).json({ erro: 'Norma não encontrada.'})
         }
 
         normas[novaIndex].ativo = false;
+        // normas[novaIndex].desativadoPor = emailUsuario || "Usuário desconhecido."
       
-        salvarNormas(normas);
-        res.status(204).send();
+        exports.salvarNormas(normas);
+
+        const normasAposDelete = normas.filter(n => n.ativo !== false);
+        res.status(200).send(normasAposDelete);
     } catch (error) {
         res.status(500).json({ message: "Erro ao excluir norma." });
     }
