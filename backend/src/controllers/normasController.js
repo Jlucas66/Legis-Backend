@@ -8,7 +8,9 @@ const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json"
 
 
 exports.lerNormas = () => {
+    console.log('Chamou...')
     const data = fs.readFileSync(normasPath, 'utf8');
+    console.log(data);
     return JSON.parse(data, 'utf8');
 }
 exports.salvarNormas = (normas) => {
@@ -26,10 +28,11 @@ exports.listarNormas = (req, res) => {
             ementa: normas.ementa,
             numero: normas.numero,
             tipo: normas.tipoCategoria?.nome || "N/A",
+            statusDisponivel: normas.statusDisponivel,
             orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
             link: normas.link
         }));
-        res.json(normasFiltradas, 'utf8');
+        res.json(normasFiltradas.filter(normas => normas.statusDisponivel === true), 'utf8');
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });
@@ -106,9 +109,9 @@ exports.modificarNorma = (req, res) => {
       return res.status(404).json({ erro: 'Norma não encontrada.' });
     }
   
-    const { orgao, tipo, numero, data, ementa } = req.body;
+    const { orgao, tipo, numero, data, ementa, ativo, statusDisponivel } = req.body;
   
-    normas[index] = { id, orgao, tipo, numero, data, ementa };
+    normas[index] = { id, orgao, tipo, numero, data, ementa, ativo, statusDisponivel };
     salvarNormas(normas);
   
     res.json(normas[index]);
@@ -134,6 +137,26 @@ exports.excluirNorma = (req, res) => {
         res.status(500).json({ message: "Erro ao excluir norma." });
     }
 };
+
+exports.modificarStatusNorma = (req, res) => {
+    try{
+        const id = parseInt(req.params.id);
+        const normas = exports.lerNormas();
+        const novaIndex = normas.findIndex(n =>n.id === id)
+
+        if (novaIndex === -1) {
+            return res.status(404).json({erro: "Norma não encontrada."})
+        }
+        normas[novaIndex].statusDisponivel = !normas[novaIndex].statusDisponivel;
+
+        // normas[novaIndex].statusDisponivel = false;
+
+        exports.salvarNormas(normas);
+        res.status(200).send(normas)
+    } catch (error){
+        res.status(500).json({message: "Erro ao modificar status da norma."});
+    }
+}
 
 
 

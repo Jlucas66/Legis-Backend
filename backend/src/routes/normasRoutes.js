@@ -11,9 +11,10 @@ router.use((req, res, next) => {
 router.get("/", normasController.listarNormas);
 router.get("/admin", normasController.listarNormasAdmin);
 router.post("/adicionar", normasController.adicionarNorma);
-router.put("/modificar", normasController.modificarNorma);
+router.put("/modificar/:id", normasController.modificarNorma);
 router.get("/busca", normasController.buscarNormaPorNumero);
 router.delete("/excluir/:id", normasController.excluirNorma);
+router.delete("/modificar-status/:id", normasController.modificarStatusNorma)
 
 
 

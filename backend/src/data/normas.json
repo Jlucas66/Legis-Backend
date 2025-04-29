@@ -79,7 +79,7 @@
     "numero": "1415",
     "interna": false,
     "ativo": true,
-    "statusDisponivel": true,
+    "statusDisponivel": false,
     "tipoCategoria": {
       "id": 7,
       "nome": "Portaria",
