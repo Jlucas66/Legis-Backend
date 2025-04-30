@@ -8,9 +8,7 @@ const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json"
 
 
 exports.lerNormas = () => {
-    console.log('Chamou...')
     const data = fs.readFileSync(normasPath, 'utf8');
-    console.log(data);
     return JSON.parse(data, 'utf8');
 }
 exports.salvarNormas = (normas) => {
@@ -62,6 +60,34 @@ exports.listarNormasAdmin = (req, res) => {
     }
 };
 
+exports.listarNormaPorId = (req, res) => {
+    try {
+        const rawData = fs.readFileSync(normasPath, 'utf8');
+        const normas = JSON.parse(rawData);
+        const id = parseInt(req.params.id);
+
+        const norma = normas.find(n => n.id === id);
+        if (!norma) {
+            return res.status(404).json({ message: "Norma não encontrada." });
+        }
+        const normaFiltradaPorID = {
+            id: norma.id,
+            data: norma.data,
+            ementa: norma.ementa,
+            numero: norma.numero,
+            tipo: norma.tipoCategoria?.nome || "N/A",
+            orgao: norma.tipoCategoria?.categoria?.nome|| "N/A",
+            ativo: norma.ativo,
+            statusDisponivel: norma.statusDisponivel ? "Ativo" : "Inativo",
+            link: norma.link
+        };
+        res.json(normaFiltradaPorID);
+    } catch (error) {
+        console.error("Erro ao listar norma por ID:", error);
+        res.status(500).json({ message: "Erro ao listar norma por ID." });
+    }
+};
+
 
 exports.adicionarNorma = (req, res) => {
     try{
@@ -103,6 +129,7 @@ exports.buscarNormaPorNumero = (req, res) => {
 exports.modificarNorma = (req, res) => {
     const id = parseInt(req.params.id);
     const normas = exports.lerNormas();
+    
     const index = normas.findIndex(n => n.id === id);
   
     if (index === -1) {
