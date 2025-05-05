@@ -91,21 +91,26 @@ exports.listarNormaPorId = (req, res) => {
 
 exports.adicionarNorma = (req, res) => {
     try{
-        const { orgao, tipo, numero, ementa, status } = req.body;
+        const { orgao, tipo, numero, ementa, status, data } = req.body;
         if (!orgao || !numero || !ementa || !tipo || !data) {
             return res.status(400).json({ message: "Preencha todos os campos obrigatórios." });
         }
 
         const normas = exports.lerNormas();
+        const salvarNormas = exports.salvarNormas;
         const novaNorma = {
-            id: normas.length > 0 ? normas[normas.length - 1].id + 1 : 1,
+            id: normas.length > 0 ? Math.max(...normas.map(n => n.id)) + 1 : 1,
             orgao,
             tipo,
             numero,
             data,
+            status,
+            ativo: true,
+            statusDisponivel: true,
             ementa
         };
         normas.push(novaNorma);
+        salvarNormas(normas);
         res.status(201).json(novaNorma);
     } catch (error) {
         console.error("Erro ao adicionar norma:", error);
@@ -129,6 +134,7 @@ exports.buscarNormaPorNumero = (req, res) => {
 exports.modificarNorma = (req, res) => {
     const id = parseInt(req.params.id);
     const normas = exports.lerNormas();
+    const salvarNormas = exports.salvarNormas;
     
     const index = normas.findIndex(n => n.id === id);
   

@@ -52561,12 +52561,22 @@
   },
   {
     "id": 2,
-    "data": "1990-08-22",
-    "ementa": "Institui o regime jurÃ­dico Ãºnico de que trata o artigo 98 da ConstituiÃ§Ã£o Estadual, e dÃ¡ outras providencias.",
-    "link": "cd8aca21e5d0345338f9ebb00c605002.pdf",
+    "orgao": "Poder Legislativo Estadual",
+    "tipo": "Lei Complementar",
     "numero": "3",
-    "interna": false,
+    "data": "1990-08-22",
+    "ementa": "teste",
     "ativo": true,
+    "statusDisponivel": "Ativo"
+  },
+  {
+    "id": 1,
+    "data": "1985-12-20",
+    "ementa": "DispÃµe sobre a aposentadoria do funcionÃ¡rio policial, nos termos do art. 103, da ConstituiÃ§Ã£o Federal.Â LegislaÃ§Ã£o Federal.",
+    "link": "0d1a9c2d5ffcfad496b5f3bdf211ca9b.pdf",
+    "numero": "51",
+    "interna": false,
+    "ativo": false,
     "statusDisponivel": true,
     "tipoCategoria": {
       "id": 1,
@@ -52578,21 +52588,13 @@
     }
   },
   {
-    "id": 1,
-    "data": "1985-12-20",
-    "ementa": "DispÃµe sobre a aposentadoria do funcionÃ¡rio policial, nos termos do art. 103, da ConstituiÃ§Ã£o Federal.Â LegislaÃ§Ã£o Federal.",
-    "link": "0d1a9c2d5ffcfad496b5f3bdf211ca9b.pdf",
-    "numero": "51",
-    "interna": false,
-    "ativo": true,
+    "id": 3153,
+    "orgao": "teste",
+    "tipo": "teste",
+    "numero": "teste",
+    "data": "2025-05-05",
+    "ativo": false,
     "statusDisponivel": true,
-    "tipoCategoria": {
-      "id": 1,
-      "nome": "Lei Complementar",
-      "categoria": {
-        "id": 1,
-        "nome": "Poder Legislativo Estadual"
-      }
-    }
+    "ementa": "teste de uma ementa"
   }
 ]
