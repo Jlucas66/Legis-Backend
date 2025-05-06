@@ -52561,12 +52561,12 @@
   },
   {
     "id": 2,
-    "orgao": "Poder Legislativo Estadual",
-    "tipo": "Lei Complementar",
+    "orgao": "N/A",
+    "tipo": "N/A",
     "numero": "3",
     "data": "1990-08-22",
-    "ementa": "teste",
-    "ativo": true,
+    "ementa": "novo teste",
+    "ativo": false,
     "statusDisponivel": "Ativo"
   },
   {
@@ -52596,5 +52596,25 @@
     "ativo": false,
     "statusDisponivel": true,
     "ementa": "teste de uma ementa"
+  },
+  {
+    "id": 3154,
+    "orgao": "policia civil",
+    "tipo": "documento",
+    "numero": "585859",
+    "data": "2025-05-05",
+    "ativo": false,
+    "statusDisponivel": true,
+    "ementa": "teste dois, agora com o fecthNormas"
+  },
+  {
+    "id": 3155,
+    "orgao": "teste 1",
+    "tipo": "teste 4",
+    "numero": "555555",
+    "data": "2025-05-05",
+    "ativo": false,
+    "statusDisponivel": true,
+    "ementa": "teste de adição de norma"
   }
 ]

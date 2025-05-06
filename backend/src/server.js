@@ -6,11 +6,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const normaRoutes = require('./routes/normasRoutes');
+const categoriasRoutes = require('./routes/categoriasRoutes');
 
 app.use(cors());
 
 app.use(express.json());
 app.use('/api/normas', normaRoutes);
+app.use('/api/categorias', categoriasRoutes)
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Normas API!');

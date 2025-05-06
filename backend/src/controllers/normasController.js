@@ -2,22 +2,29 @@ const e = require("cors");
 const fs = require("fs");
 const path = require("path");
 const normasPath = path.join(__dirname, "../data/normas.json");
-const categoriasPath = path.join(__dirname, "../data/categorias.json");
 const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json");
 
 
 
 exports.lerNormas = () => {
-    const data = fs.readFileSync(normasPath, 'utf8');
-    return JSON.parse(data, 'utf8');
+    const data = fs.readFileSync(normasPath);
+    return JSON.parse(data);
 }
 exports.salvarNormas = (normas) => {
-    fs.writeFileSync(normasPath, JSON.stringify(normas, null, 2), 'utf8');
+    fs.writeFileSync(normasPath, JSON.stringify(normas, null, 2));
+};
+
+exports.lerTiposCategorias = () => {
+    const data = fs.readFileSync(tiposCategoriasPath);
+    return JSON.parse(data);
+};
+exports.salvarTiposCategorias = (tiposCategorias) => {
+    fs.writeFileSync(tiposCategoriasPath, JSON.stringify(tiposCategorias, null, 2));
 };
 
 exports.listarNormas = (req, res) => {
     try {
-        const rawData = fs.readFileSync(normasPath, 'utf8');
+        const rawData = fs.readFileSync(normasPath);
         const normas = JSON.parse(rawData);
     
         const normasFiltradas = normas.map( normas => ({
@@ -30,7 +37,7 @@ exports.listarNormas = (req, res) => {
             orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
             link: normas.link
         }));
-        res.json(normasFiltradas.filter(normas => normas.statusDisponivel === true), 'utf8');
+        res.json(normasFiltradas.filter(normas => normas.statusDisponivel === true));
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });
@@ -39,7 +46,7 @@ exports.listarNormas = (req, res) => {
 
 exports.listarNormasAdmin = (req, res) => {
     try {
-        const rawData = fs.readFileSync(normasPath, 'utf8');
+        const rawData = fs.readFileSync(normasPath);
         const normas = JSON.parse(rawData);
     
         const normasFiltradasAdmin = normas.map( normas => ({
@@ -53,7 +60,7 @@ exports.listarNormasAdmin = (req, res) => {
             statusDisponivel: normas.statusDisponivel ? "Ativo" : "Inativo",
             link: normas.link,
         }));
-        res.json(normasFiltradasAdmin.filter(normas => normas.ativo === true ), 'utf8');
+        res.json(normasFiltradasAdmin.filter(normas => normas.ativo === true ));
     } catch (error) {
         console.error("Erro ao listar normas:", error);
         res.status(500).json({ message: "Erro ao listar normas." });
@@ -62,7 +69,7 @@ exports.listarNormasAdmin = (req, res) => {
 
 exports.listarNormaPorId = (req, res) => {
     try {
-        const rawData = fs.readFileSync(normasPath, 'utf8');
+        const rawData = fs.readFileSync(normasPath);
         const normas = JSON.parse(rawData);
         const id = parseInt(req.params.id);
 

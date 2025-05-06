@@ -14,4 +14,7 @@ app.use(express.json());
 const normasRoutes = require('./routes/normasRoutes.js');
 app.use("/Normas", normasRoutes);
 
+const categoriasRoutes = require('./routes/categoriasRoutes.js');
+app.use("/Categorias", categoriasRoutes);
+
 module.exports = app;

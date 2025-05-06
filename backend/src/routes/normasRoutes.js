@@ -10,10 +10,10 @@ router.use((req, res, next) => {
 
 router.get("/", normasController.listarNormas);
 router.get("/admin", normasController.listarNormasAdmin);
+router.get("/busca", normasController.buscarNormaPorNumero);
 router.get("/listar-para-edicao/:id", normasController.listarNormaPorId);
 router.post("/adicionar", normasController.adicionarNorma);
 router.put("/modificar/:id", normasController.modificarNorma);
-router.get("/busca", normasController.buscarNormaPorNumero);
 router.delete("/excluir/:id", normasController.excluirNorma);
 router.delete("/modificar-status/:id", normasController.modificarStatusNorma)
 
