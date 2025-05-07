@@ -21,7 +21,7 @@ exports.listarCategorias = (req, res) => {
         const categoriasFiltradas = categorias.map(categoria => ({
             id: categoria.id,
             nome: categoria.nome,
-            ativo: categoria.ativo,
+            ativo: categoria.ativo ? "Ativo" : "Inativo",
         }));
 
         res.json(categoriasFiltradas);
@@ -52,10 +52,33 @@ exports.adicionarCategoria = (req, res) => {
     }
 }
 
-exports.buscarCategoriaPorId = (id) => {
-    const categorias = lerCategorias();
-    return categorias.find(categoria => categoria.id === id);
+exports.buscarCategoriaPorId = (req, res) => {
+    try {
+        const rawData = fs.readFileSync(categoriasPath);
+        const categorias = JSON.parse(rawData);
+        const id = parseInt(req.params.id);
+
+        const categoria = categorias.find(categoria => categoria.id === id);
+        if (!categoria) {
+            return res.status(404).json({ message: "Categoria não encontrada." });
+        }
+        const categoriaFiltradaPorID = {
+            id: categoria.id,
+            nome: categoria.nome,
+            ativo: categoria.ativo ? "Ativo" : "Inativo",
+            tipo: categoria.tipo
+        };
+        res.json(categoriaFiltradaPorID);
+    } catch (error) {
+        console.error("Erro ao buscar categoria por ID:", error);
+        res.status(500).json({ message: "Erro ao buscar categoria por ID." });
+    }
+    
 }
+
+
+
+
 exports.atualizarCategoria = (req, res) => {
     try {
         const { id } = req.params;
@@ -83,13 +106,14 @@ exports.excluirCategoria = (req, res) => {
     try {
         const id = parseInt(req.params.id);
         const categorias = exports.lerCategorias();
-        const salvarCategorias = exports.salvarCategorias;
         const categoriaIndex = categorias.findIndex(categoria => categoria.id === id);
+        
+        
         if (categoriaIndex === -1) {
             return res.status(404).json({ message: "Categoria não encontrada." });
         }
-        categorias[categoriaIndex].ativo = false;
-        salvarCategorias(categorias);
+        categorias[categoriaIndex].ativo = !categorias[categoriaIndex].ativo;
+        exports.salvarCategorias(categorias);
         res.status(200).json({ message: "Categoria excluída com sucesso." });
     } catch (error) {
         console.error("Erro ao excluir categoria:", error);

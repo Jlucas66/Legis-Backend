@@ -189,8 +189,6 @@ exports.modificarStatusNorma = (req, res) => {
         }
         normas[novaIndex].statusDisponivel = !normas[novaIndex].statusDisponivel;
 
-        // normas[novaIndex].statusDisponivel = false;
-
         exports.salvarNormas(normas);
         res.status(200).send(normas)
     } catch (error){

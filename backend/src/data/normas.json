@@ -73,21 +73,13 @@
   },
   {
     "id": 3148,
+    "orgao": "N/A",
+    "tipo": "N/A",
+    "numero": "1415",
     "data": "2025-02-24",
     "ementa": "Aprova o Planejamento de Cursos da Academia Integrada de Defesa Social (ACIDES) para o ano letivo de 2025. ",
-    "link": "eade11c7e1a1ac413a810cc03b16cdc9.pdf",
-    "numero": "1415",
-    "interna": false,
     "ativo": true,
-    "statusDisponivel": true,
-    "tipoCategoria": {
-      "id": 7,
-      "nome": "Portaria",
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    }
+    "statusDisponivel": true
   },
   {
     "id": 3147,

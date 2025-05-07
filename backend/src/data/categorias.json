@@ -1,342 +1,342 @@
 [
-    {
-      "id": 43,
-      "nome": "- Todos -",
-      "ativo": false
-    },
-    {
-      "id": 55,
-      "nome": "ASSEMBLEIA LEGISLATIVA",
-      "ativo": true
-    },
-    {
-      "id": 50,
-      "nome": "Câmara de Política Financeira -CPF",
-      "ativo": true
-    },
-    {
-      "id": 7,
-      "nome": "Corregedoria Geral - COR GER",
-      "ativo": true
-    },
-    {
-      "id": 18,
-      "nome": "DETRAN-PE",
-      "ativo": true
-    },
-    {
-      "id": 74,
-      "nome": "DG/PCPE",
-      "ativo": true
-    },
-    {
-      "id": 69,
-      "nome": "EDITAL - SDS",
-      "ativo": true
-    },
-    {
-      "id": 54,
-      "nome": "EMENDA DA CONSTITUIÇÃO",
-      "ativo": true
-    },
-    {
-      "id": 75,
-      "nome": "FUNAPE",
-      "ativo": true
-    },
-    {
-      "id": 21,
-      "nome": "Gerência Geral de Assuntos Jurídicos - GGAJ/SDS",
-      "ativo": true
-    },
-    {
-      "id": 22,
-      "nome": "Grupo de Trabalho Operação São João 2016",
-      "ativo": true
-    },
-    {
-      "id": 76,
-      "nome": "MINISTÉRIO DA JUSTIÇA -MJ",
-      "ativo": true
-    },
-    {
-      "id": 16,
-      "nome": "Ministério Público de Pernambuco - MPPE",
-      "ativo": true
-    },
-    {
-      "id": 15,
-      "nome": "Órgãos em conjunto",
-      "ativo": false
-    },
-    {
-      "id": 28,
-      "nome": "Órgãos em Conjunto - PGJ",
-      "ativo": true
-    },
-    {
-      "id": 27,
-      "nome": "Órgãos em Conjunto - SAD / IRH",
-      "ativo": true
-    },
-    {
-      "id": 26,
-      "nome": "Órgãos em Conjunto - SAD / SDS",
-      "ativo": true
-    },
-    {
-      "id": 33,
-      "nome": "Órgãos em Conjunto - SAD / SDS / PCPE",
-      "ativo": true
-    },
-    {
-      "id": 30,
-      "nome": "Órgãos em Conjunto - SAD / SEFAZ",
-      "ativo": true
-    },
-    {
-      "id": 34,
-      "nome": "Órgãos em Conjunto - SAD / SEFAZ / PCPE",
-      "ativo": true
-    },
-    {
-      "id": 20,
-      "nome": "Órgãos em Conjunto - SAD / SEFAZ / SDS",
-      "ativo": true
-    },
-    {
-      "id": 38,
-      "nome": "Órgãos em Conjunto - SAD / SEFAZ / SERES",
-      "ativo": true
-    },
-    {
-      "id": 40,
-      "nome": "Órgãos em Conjunto - SAD / SETUREL",
-      "ativo": true
-    },
-    {
-      "id": 25,
-      "nome": "Órgãos em Conjunto - SARE / SDS",
-      "ativo": true
-    },
-    {
-      "id": 36,
-      "nome": "Órgãos em Conjunto - SDS / CAMIL / SEDSDH",
-      "ativo": true
-    },
-    {
-      "id": 35,
-      "nome": "Órgãos em Conjunto - SDS / SCJ",
-      "ativo": true
-    },
-    {
-      "id": 39,
-      "nome": "Órgãos em Conjunto - SDS / SEPLAG / ATI",
-      "ativo": true
-    },
-    {
-      "id": 29,
-      "nome": "Órgãos em Conjunto - SDS / SES",
-      "ativo": true
-    },
-    {
-      "id": 37,
-      "nome": "Órgãos em Conjunto - SEDSDH / SDS / SAG",
-      "ativo": true
-    },
-    {
-      "id": 51,
-      "nome": "Órgãos em Conjunto - SEDSDH/SDS",
-      "ativo": true
-    },
-    {
-      "id": 61,
-      "nome": "Órgãos em Conjunto - SEE/SES",
-      "ativo": true
-    },
-    {
-      "id": 31,
-      "nome": "Órgãos em Conjunto - SEFAZ / SDS",
-      "ativo": true
-    },
-    {
-      "id": 41,
-      "nome": "Órgãos em Conjunto - SEPLAG / SDS",
-      "ativo": true
-    },
-    {
-      "id": 53,
-      "nome": "ÓRGÃOS EM CONJUNTO - SES/SDEC",
-      "ativo": true
-    },
-    {
-      "id": 32,
-      "nome": "Órgãos em conjunto: GPE / DGOPJ / PCPE",
-      "ativo": true
-    },
-    {
-      "id": 2,
-      "nome": "Poder Executivo Estadual",
-      "ativo": true
-    },
-    {
-      "id": 71,
-      "nome": "PODER EXECUTIVO FEDERAL",
-      "ativo": true
-    },
-    {
-      "id": 72,
-      "nome": "PODER EXECUTIVO FEDERAL",
-      "ativo": true
-    },
-    {
-      "id": 1,
-      "nome": "Poder Legislativo Estadual",
-      "ativo": true
-    },
-    {
-      "id": 45,
-      "nome": "Polícia Civil - DIRH/PCPE",
-      "ativo": true
-    },
-    {
-      "id": 19,
-      "nome": "Polícia Civil - DIRH/PCPE2",
-      "ativo": false
-    },
-    {
-      "id": 10,
-      "nome": "Polícia Civil - GAB/PCPE",
-      "ativo": true
-    },
-    {
-      "id": 46,
-      "nome": "Polícia Civil - GCOI 1/PCPE",
-      "ativo": true
-    },
-    {
-      "id": 67,
-      "nome": "Polícia Civil - PCPE",
-      "ativo": true
-    },
-    {
-      "id": 73,
-      "nome": "Polícia Civil - UNAJUR",
-      "ativo": true
-    },
-    {
-      "id": 44,
-      "nome": "Polícia Civil - UNICEV/PCPE",
-      "ativo": true
-    },
-    {
-      "id": 14,
-      "nome": "Polícia Militar de Pernambuco - PMPE",
-      "ativo": true
-    },
-    {
-      "id": 58,
-      "nome": "PORTARIA - SES",
-      "ativo": true
-    },
-    {
-      "id": 65,
-      "nome": "PORTARIA CONJUNTA SDS/SEC MULHER-PE",
-      "ativo": true
-    },
-    {
-      "id": 64,
-      "nome": "PORTARIA SDS/SEDS",
-      "ativo": true
-    },
-    {
-      "id": 56,
-      "nome": "PORTARIA SEPLAG",
-      "ativo": true
-    },
-    {
-      "id": 66,
-      "nome": "PORTARIA SES/PE",
-      "ativo": true
-    },
-    {
-      "id": 13,
-      "nome": "Procuradoria Geral do Estado - PGE",
-      "ativo": true
-    },
-    {
-      "id": 48,
-      "nome": "Receita Federal",
-      "ativo": true
-    },
-    {
-      "id": 68,
-      "nome": "SAD/FUNAPE",
-      "ativo": true
-    },
-    {
-      "id": 70,
-      "nome": "SDS/SEPLAG/ATI",
-      "ativo": true
-    },
-    {
-      "id": 47,
-      "nome": "Secretaria da Controladoria-Geral do Estado - SCGE",
-      "ativo": true
-    },
-    {
-      "id": 11,
-      "nome": "Secretaria de Administração - SAD",
-      "ativo": true
-    },
-    {
-      "id": 12,
-      "nome": "Secretaria de Defesa Social - GAB/SDS",
-      "ativo": true
-    },
-    {
-      "id": 49,
-      "nome": "Secretaria de Defesa Social - GGPOC",
-      "ativo": true
-    },
-    {
-      "id": 42,
-      "nome": "Secretaria de Defesa Social - SEGI/SDS",
-      "ativo": true
-    },
-    {
-      "id": 17,
-      "nome": "Secretaria de Desenvolvimento Social e Direitos Humanos - SDSDH",
-      "ativo": true
-    },
-    {
-      "id": 62,
-      "nome": "Secretaria de Educação e Esportes - SEE",
-      "ativo": true
-    },
-    {
-      "id": 60,
-      "nome": "Secretaria de Esportes - SEE",
-      "ativo": false
-    },
-    {
-      "id": 57,
-      "nome": "Secretaria de Planejamento e Gestão - SEPLAG  - Portaria",
-      "ativo": true
-    },
-    {
-      "id": 52,
-      "nome": "SECRETARIA DE SAÚDE",
-      "ativo": false
-    },
-    {
-      "id": 59,
-      "nome": "SECRETARIA DE SAÚDE - PORTARIA -SES",
-      "ativo": true
-    },
-    {
-      "id": 63,
-      "nome": "Secretário Executivo de Gestão Integrada.",
-      "ativo": true
-    }
-  ]
+  {
+    "id": 43,
+    "nome": "- Todos -",
+    "ativo": false
+  },
+  {
+    "id": 55,
+    "nome": "ASSEMBLEIA LEGISLATIVA",
+    "ativo": true
+  },
+  {
+    "nome": "Câmara de Política Financeira - CPF",
+    "ativo": true,
+    "id": 50
+  },
+  {
+    "nome": "Corregedoria Geral - COR GER",
+    "ativo": "Ativo",
+    "id": 7
+  },
+  {
+    "nome": "DETRAN-PE",
+    "ativo": true,
+    "id": 18
+  },
+  {
+    "id": 74,
+    "nome": "DG/PCPE",
+    "ativo": true
+  },
+  {
+    "id": 69,
+    "nome": "EDITAL - SDS",
+    "ativo": true
+  },
+  {
+    "id": 54,
+    "nome": "EMENDA DA CONSTITUIÇÃO",
+    "ativo": true
+  },
+  {
+    "id": 75,
+    "nome": "FUNAPE",
+    "ativo": true
+  },
+  {
+    "id": 21,
+    "nome": "Gerência Geral de Assuntos Jurídicos - GGAJ/SDS",
+    "ativo": true
+  },
+  {
+    "id": 22,
+    "nome": "Grupo de Trabalho Operação São João 2016",
+    "ativo": true
+  },
+  {
+    "id": 76,
+    "nome": "MINISTÉRIO DA JUSTIÇA -MJ",
+    "ativo": true
+  },
+  {
+    "id": 16,
+    "nome": "Ministério Público de Pernambuco - MPPE",
+    "ativo": true
+  },
+  {
+    "id": 15,
+    "nome": "Órgãos em conjunto",
+    "ativo": false
+  },
+  {
+    "id": 28,
+    "nome": "Órgãos em Conjunto - PGJ",
+    "ativo": true
+  },
+  {
+    "id": 27,
+    "nome": "Órgãos em Conjunto - SAD / IRH",
+    "ativo": true
+  },
+  {
+    "id": 26,
+    "nome": "Órgãos em Conjunto - SAD / SDS",
+    "ativo": true
+  },
+  {
+    "id": 33,
+    "nome": "Órgãos em Conjunto - SAD / SDS / PCPE",
+    "ativo": true
+  },
+  {
+    "id": 30,
+    "nome": "Órgãos em Conjunto - SAD / SEFAZ",
+    "ativo": true
+  },
+  {
+    "id": 34,
+    "nome": "Órgãos em Conjunto - SAD / SEFAZ / PCPE",
+    "ativo": true
+  },
+  {
+    "id": 20,
+    "nome": "Órgãos em Conjunto - SAD / SEFAZ / SDS",
+    "ativo": true
+  },
+  {
+    "id": 38,
+    "nome": "Órgãos em Conjunto - SAD / SEFAZ / SERES",
+    "ativo": true
+  },
+  {
+    "id": 40,
+    "nome": "Órgãos em Conjunto - SAD / SETUREL",
+    "ativo": true
+  },
+  {
+    "id": 25,
+    "nome": "Órgãos em Conjunto - SARE / SDS",
+    "ativo": true
+  },
+  {
+    "id": 36,
+    "nome": "Órgãos em Conjunto - SDS / CAMIL / SEDSDH",
+    "ativo": true
+  },
+  {
+    "id": 35,
+    "nome": "Órgãos em Conjunto - SDS / SCJ",
+    "ativo": true
+  },
+  {
+    "id": 39,
+    "nome": "Órgãos em Conjunto - SDS / SEPLAG / ATI",
+    "ativo": true
+  },
+  {
+    "id": 29,
+    "nome": "Órgãos em Conjunto - SDS / SES",
+    "ativo": true
+  },
+  {
+    "id": 37,
+    "nome": "Órgãos em Conjunto - SEDSDH / SDS / SAG",
+    "ativo": true
+  },
+  {
+    "id": 51,
+    "nome": "Órgãos em Conjunto - SEDSDH/SDS",
+    "ativo": true
+  },
+  {
+    "id": 61,
+    "nome": "Órgãos em Conjunto - SEE/SES",
+    "ativo": true
+  },
+  {
+    "id": 31,
+    "nome": "Órgãos em Conjunto - SEFAZ / SDS",
+    "ativo": true
+  },
+  {
+    "id": 41,
+    "nome": "Órgãos em Conjunto - SEPLAG / SDS",
+    "ativo": true
+  },
+  {
+    "id": 53,
+    "nome": "ÓRGÃOS EM CONJUNTO - SES/SDEC",
+    "ativo": true
+  },
+  {
+    "id": 32,
+    "nome": "Órgãos em conjunto: GPE / DGOPJ / PCPE",
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "nome": "Poder Executivo Estadual",
+    "ativo": true
+  },
+  {
+    "id": 71,
+    "nome": "PODER EXECUTIVO FEDERAL",
+    "ativo": true
+  },
+  {
+    "id": 72,
+    "nome": "PODER EXECUTIVO FEDERAL",
+    "ativo": true
+  },
+  {
+    "id": 1,
+    "nome": "Poder Legislativo Estadual",
+    "ativo": true
+  },
+  {
+    "id": 45,
+    "nome": "Polícia Civil - DIRH/PCPE",
+    "ativo": true
+  },
+  {
+    "id": 19,
+    "nome": "Polícia Civil - DIRH/PCPE2",
+    "ativo": false
+  },
+  {
+    "id": 10,
+    "nome": "Polícia Civil - GAB/PCPE",
+    "ativo": true
+  },
+  {
+    "id": 46,
+    "nome": "Polícia Civil - GCOI 1/PCPE",
+    "ativo": true
+  },
+  {
+    "id": 67,
+    "nome": "Polícia Civil - PCPE",
+    "ativo": true
+  },
+  {
+    "id": 73,
+    "nome": "Polícia Civil - UNAJUR",
+    "ativo": true
+  },
+  {
+    "id": 44,
+    "nome": "Polícia Civil - UNICEV/PCPE",
+    "ativo": true
+  },
+  {
+    "id": 14,
+    "nome": "Polícia Militar de Pernambuco - PMPE",
+    "ativo": true
+  },
+  {
+    "id": 58,
+    "nome": "PORTARIA - SES",
+    "ativo": true
+  },
+  {
+    "id": 65,
+    "nome": "PORTARIA CONJUNTA SDS/SEC MULHER-PE",
+    "ativo": true
+  },
+  {
+    "id": 64,
+    "nome": "PORTARIA SDS/SEDS",
+    "ativo": true
+  },
+  {
+    "id": 56,
+    "nome": "PORTARIA SEPLAG",
+    "ativo": true
+  },
+  {
+    "id": 66,
+    "nome": "PORTARIA SES/PE",
+    "ativo": true
+  },
+  {
+    "id": 13,
+    "nome": "Procuradoria Geral do Estado - PGE",
+    "ativo": true
+  },
+  {
+    "id": 48,
+    "nome": "Receita Federal",
+    "ativo": true
+  },
+  {
+    "id": 68,
+    "nome": "SAD/FUNAPE",
+    "ativo": true
+  },
+  {
+    "id": 70,
+    "nome": "SDS/SEPLAG/ATI",
+    "ativo": true
+  },
+  {
+    "id": 47,
+    "nome": "Secretaria da Controladoria-Geral do Estado - SCGE",
+    "ativo": true
+  },
+  {
+    "id": 11,
+    "nome": "Secretaria de Administração - SAD",
+    "ativo": true
+  },
+  {
+    "id": 12,
+    "nome": "Secretaria de Defesa Social - GAB/SDS",
+    "ativo": true
+  },
+  {
+    "id": 49,
+    "nome": "Secretaria de Defesa Social - GGPOC",
+    "ativo": true
+  },
+  {
+    "id": 42,
+    "nome": "Secretaria de Defesa Social - SEGI/SDS",
+    "ativo": true
+  },
+  {
+    "id": 17,
+    "nome": "Secretaria de Desenvolvimento Social e Direitos Humanos - SDSDH",
+    "ativo": true
+  },
+  {
+    "id": 62,
+    "nome": "Secretaria de Educação e Esportes - SEE",
+    "ativo": true
+  },
+  {
+    "id": 60,
+    "nome": "Secretaria de Esportes - SEE",
+    "ativo": false
+  },
+  {
+    "id": 57,
+    "nome": "Secretaria de Planejamento e Gestão - SEPLAG  - Portaria",
+    "ativo": true
+  },
+  {
+    "id": 52,
+    "nome": "SECRETARIA DE SAÚDE",
+    "ativo": false
+  },
+  {
+    "id": 59,
+    "nome": "SECRETARIA DE SAÚDE - PORTARIA -SES",
+    "ativo": true
+  },
+  {
+    "id": 63,
+    "nome": "Secretário Executivo de Gestão Integrada.",
+    "ativo": true
+  }
+]
