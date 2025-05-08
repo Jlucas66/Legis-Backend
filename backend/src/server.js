@@ -13,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/normas', normaRoutes);
 app.use('/api/categorias', categoriasRoutes)
+app.use('/api/documentos', documentosRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Normas API!');

@@ -17,4 +17,7 @@ app.use("/Normas", normasRoutes);
 const categoriasRoutes = require('./routes/categoriasRoutes.js');
 app.use("/Categorias", categoriasRoutes);
 
+const documentosRoutes = require('./routes/documentosRoutes.js');
+app.use("/Documentos", documentosRoutes);
+
 module.exports = app;

@@ -1,6 +1,4 @@
-const e = require("cors");
-const fs = require("fs");
-const path = require("path");
+const fs = require("fs");const path = require("path");
 const normasPath = path.join(__dirname, "../data/normas.json");
 const tiposCategoriasPath = path.join(__dirname, "../data/tipos-categorias.json");
 

@@ -1,4 +1,3 @@
-const e = require("cors");
 const fs = require("fs");
 const path = require("path");
 const categoriasPath = path.join(__dirname, "../data/categorias.json");
