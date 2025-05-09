@@ -33,12 +33,12 @@ exports.listarDocumentos = (req, res) => {
 exports.adicionarDocumento = (req, res) => {
     try {
         const { nome, ativo, categoria } = req.body;
-        const documentos = lerDocumentos();
+        const documentos = exports.lerDocumentos();
+        const salvarDocumentos = exports.salvarDocumentos;
 
         const novaDocumento = {
             id: documentos.length > 0 ? Math.max(...documentos.map(d => d.id)) + 1 : 1,
             nome,
-            ativo,
             categoria
         };
 
@@ -79,7 +79,7 @@ exports.buscarDocumentoPorId = (req, res) => {
 exports.atualizarDocumento = (req, res) => {
     try {
         const id = parseInt(req.params.id);
-        const documentos = lerDocumentos();
+        const documentos = exports.lerDocumentos();
         const salvarDocumentos = exports.salvarDocumentos;
 
         const documentoIndex = documentos.findIndex(documento => documento.id === id);
@@ -101,14 +101,14 @@ exports.atualizarDocumento = (req, res) => {
 exports.deletarDocumento = (req, res) => {
     try {
         const id = parseInt(req.params.id);
-        const documentos = lerDocumentos();
+        const documentos = exports.lerDocumentos();
         const documentosIndex = documentos.findIndex(documento => documento.id === id);
 
-        if (documentoIndex === -1) {
+        if (documentosIndex === -1) {
             return res.status(404).json({ message: "Documento não encontrado." });
         }
 
-        documentos[documentoIndex].ativo = !documentos[documentoIndex].ativo;
+        documentos[documentosIndex].ativo = !documentos[documentosIndex].ativo;
         exports.salvarDocumentos(documentos);
         res.status(200).send({ message: "Documento deletado com sucesso." });
     } catch (error) {

@@ -7,6 +7,7 @@ const app = express();
 const cors = require('cors');
 const normaRoutes = require('./routes/normasRoutes');
 const categoriasRoutes = require('./routes/categoriasRoutes');
+const documentosRoutes = require('./routes/documentosRoutes');
 
 app.use(cors());
 

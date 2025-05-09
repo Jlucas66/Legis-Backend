@@ -32,14 +32,14 @@ exports.listarCategorias = (req, res) => {
 
 exports.adicionarCategoria = (req, res) => {
     try {
-        const { nome, ativo, tipo } = req.body;
-        const categorias = lerCategorias();
+        const { nome, ativo } = req.body;
+        const categorias = exports.lerCategorias();
+        const salvarCategorias = exports.salvarCategorias;
 
         const novaCategoria = {
             id: categorias.length > 0 ? Math.max(...categorias.map(t => t.id)) + 1 : 1,
             nome,
-            ativo,
-            tipo
+            ativo
         };
 
         categorias.push(novaCategoria);

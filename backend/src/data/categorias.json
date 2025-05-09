@@ -21,7 +21,7 @@
   },
   {
     "nome": "DETRAN-PE",
-    "ativo": true,
+    "ativo": "Ativo",
     "id": 18
   },
   {
@@ -338,5 +338,10 @@
     "id": 63,
     "nome": "Secretário Executivo de Gestão Integrada.",
     "ativo": true
+  },
+  {
+    "id": 77,
+    "nome": "aaaa",
+    "ativo": "Ativo"
   }
 ]

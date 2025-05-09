@@ -1,719 +1,724 @@
 [
-    {
-      "id": 73,
-      "nome": " GGPOC",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 93,
-      "nome": "ANEXO PESPCPE",
-      "ativo": true,
-      "categoria": {
-        "id": 67,
-        "nome": "Polícia Civil - PCPE"
-      }
-    },
-    {
-      "id": 17,
-      "nome": "Ato",
-      "ativo": true,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 76,
-      "nome": "Ato",
-      "ativo": true,
-      "categoria": {
-        "id": 2,
-        "nome": "Poder Executivo Estadual"
-      }
-    },
-    {
-      "id": 15,
-      "nome": "Decreto",
-      "ativo": true,
-      "categoria": {
-        "id": 2,
-        "nome": "Poder Executivo Estadual"
-      }
-    },
-    {
-      "id": 71,
-      "nome": "EDITAL",
-      "ativo": true,
-      "categoria": {
-        "id": 11,
-        "nome": "Secretaria de Administração - SAD"
-      }
-    },
-    {
-      "id": 96,
-      "nome": "EDITAL ",
-      "ativo": false,
-      "categoria": {
-        "id": 69,
-        "nome": "EDITAL - SDS"
-      }
-    },
-    {
-      "id": 97,
-      "nome": "Edital",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 80,
-      "nome": "EMENDA DA CONSTITUIÇÃO",
-      "ativo": true,
-      "categoria": {
-        "id": 54,
-        "nome": "EMENDA DA CONSTITUIÇÃO"
-      }
-    },
-    {
-      "id": 89,
-      "nome": "Extrato de Contrato",
-      "ativo": true,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 31,
-      "nome": "Instrução Normativa",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 32,
-      "nome": "Instrução Normativa",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 33,
-      "nome": "Instrução Normativa",
-      "ativo": true,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 34,
-      "nome": "Instrução Normativa",
-      "ativo": true,
-      "categoria": {
-        "id": 11,
-        "nome": "Secretaria de Administração - SAD"
-      }
-    },
-    {
-      "id": 99,
-      "nome": "INSTRUÇÃO NORMATIVA",
-      "ativo": true,
-      "categoria": {
-        "id": 75,
-        "nome": "FUNAPE"
-      }
-    },
-    {
-      "id": 95,
-      "nome": "LEI",
-      "ativo": true,
-      "categoria": {
-        "id": 71,
-        "nome": "PODER EXECUTIVO FEDERAL"
-      }
-    },
-    {
-      "id": 1,
-      "nome": "Lei Complementar",
-      "ativo": true,
-      "categoria": {
-        "id": 1,
-        "nome": "Poder Legislativo Estadual"
-      }
-    },
-    {
-      "id": 94,
-      "nome": "LEI FEDERAL",
-      "ativo": true,
-      "categoria": {
-        "id": 55,
-        "nome": "ASSEMBLEIA LEGISLATIVA"
-      }
-    },
-    {
-      "id": 2,
-      "nome": "Lei Ordinária",
-      "ativo": true,
-      "categoria": {
-        "id": 1,
-        "nome": "Poder Legislativo Estadual"
-      }
-    },
-    {
-      "id": 11,
-      "nome": "Manual de Correições",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 24,
-      "nome": "Parecer",
-      "ativo": true,
-      "categoria": {
-        "id": 13,
-        "nome": "Procuradoria Geral do Estado - PGE"
-      }
-    },
-    {
-      "id": 41,
-      "nome": "Parecer",
-      "ativo": true,
-      "categoria": {
-        "id": 21,
-        "nome": "Gerência Geral de Assuntos Jurídicos - GGAJ/SDS"
-      }
-    },
-    {
-      "id": 29,
-      "nome": "Pareceres da Gerência Geral de Assuntos Jurídicos",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 5,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 6,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 11,
-        "nome": "Secretaria de Administração - SAD"
-      }
-    },
-    {
-      "id": 7,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 9,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 35,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 16,
-        "nome": "Ministério Público de Pernambuco - MPPE"
-      }
-    },
-    {
-      "id": 36,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 13,
-        "nome": "Procuradoria Geral do Estado - PGE"
-      }
-    },
-    {
-      "id": 37,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 17,
-        "nome": "Secretaria de Desenvolvimento Social e Direitos Humanos - SDSDH"
-      }
-    },
-    {
-      "id": 38,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 18,
-        "nome": "DETRAN-PE"
-      }
-    },
-    {
-      "id": 39,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 15,
-        "nome": "Órgãos em conjunto"
-      }
-    },
-    {
-      "id": 40,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 20,
-        "nome": "Órgãos em Conjunto - SAD / SEFAZ / SDS"
-      }
-    },
-    {
-      "id": 42,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 22,
-        "nome": "Grupo de Trabalho Operação São João 2016"
-      }
-    },
-    {
-      "id": 46,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 40,
-        "nome": "Órgãos em Conjunto - SAD / SETUREL"
-      }
-    },
-    {
-      "id": 47,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 25,
-        "nome": "Órgãos em Conjunto - SARE / SDS"
-      }
-    },
-    {
-      "id": 48,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 26,
-        "nome": "Órgãos em Conjunto - SAD / SDS"
-      }
-    },
-    {
-      "id": 49,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 27,
-        "nome": "Órgãos em Conjunto - SAD / IRH"
-      }
-    },
-    {
-      "id": 50,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 28,
-        "nome": "Órgãos em Conjunto - PGJ"
-      }
-    },
-    {
-      "id": 51,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 29,
-        "nome": "Órgãos em Conjunto - SDS / SES"
-      }
-    },
-    {
-      "id": 52,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 30,
-        "nome": "Órgãos em Conjunto - SAD / SEFAZ"
-      }
-    },
-    {
-      "id": 53,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 31,
-        "nome": "Órgãos em Conjunto - SEFAZ / SDS"
-      }
-    },
-    {
-      "id": 54,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 32,
-        "nome": "Órgãos em conjunto: GPE / DGOPJ / PCPE"
-      }
-    },
-    {
-      "id": 55,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 33,
-        "nome": "Órgãos em Conjunto - SAD / SDS / PCPE"
-      }
-    },
-    {
-      "id": 56,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 34,
-        "nome": "Órgãos em Conjunto - SAD / SEFAZ / PCPE"
-      }
-    },
-    {
-      "id": 57,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 35,
-        "nome": "Órgãos em Conjunto - SDS / SCJ"
-      }
-    },
-    {
-      "id": 58,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 36,
-        "nome": "Órgãos em Conjunto - SDS / CAMIL / SEDSDH"
-      }
-    },
-    {
-      "id": 59,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 37,
-        "nome": "Órgãos em Conjunto - SEDSDH / SDS / SAG"
-      }
-    },
-    {
-      "id": 60,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 38,
-        "nome": "Órgãos em Conjunto - SAD / SEFAZ / SERES"
-      }
-    },
-    {
-      "id": 61,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 39,
-        "nome": "Órgãos em Conjunto - SDS / SEPLAG / ATI"
-      }
-    },
-    {
-      "id": 62,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 41,
-        "nome": "Órgãos em Conjunto - SEPLAG / SDS"
-      }
-    },
-    {
-      "id": 63,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 42,
-        "nome": "Secretaria de Defesa Social - SEGI/SDS"
-      }
-    },
-    {
-      "id": 64,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 44,
-        "nome": "Polícia Civil - UNICEV/PCPE"
-      }
-    },
-    {
-      "id": 65,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 45,
-        "nome": "Polícia Civil - DIRH/PCPE"
-      }
-    },
-    {
-      "id": 66,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 46,
-        "nome": "Polícia Civil - GCOI 1/PCPE"
-      }
-    },
-    {
-      "id": 67,
-      "nome": "Portaria",
-      "ativo": false,
-      "categoria": null
-    },
-    {
-      "id": 68,
-      "nome": "Portaria ",
-      "ativo": false,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 69,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 47,
-        "nome": "Secretaria da Controladoria-Geral do Estado - SCGE"
-      }
-    },
-    {
-      "id": 78,
-      "nome": "Portaria ",
-      "ativo": true,
-      "categoria": {
-        "id": 51,
-        "nome": "Órgãos em Conjunto - SEDSDH/SDS"
-      }
-    },
-    {
-      "id": 79,
-      "nome": "Portaria ",
-      "ativo": true,
-      "categoria": {
-        "id": 53,
-        "nome": "ÓRGÃOS EM CONJUNTO - SES/SDEC"
-      }
-    },
-    {
-      "id": 82,
-      "nome": "PORTARIA",
-      "ativo": true,
-      "categoria": {
-        "id": 56,
-        "nome": "PORTARIA SEPLAG"
-      }
-    },
-    {
-      "id": 83,
-      "nome": "Portaria ",
-      "ativo": true,
-      "categoria": {
-        "id": 60,
-        "nome": "Secretaria de Esportes - SEE"
-      }
-    },
-    {
-      "id": 84,
-      "nome": "Portaria ",
-      "ativo": true,
-      "categoria": {
-        "id": 62,
-        "nome": "Secretaria de Educação e Esportes - SEE"
-      }
-    },
-    {
-      "id": 86,
-      "nome": "PORTARIA",
-      "ativo": true,
-      "categoria": {
-        "id": 64,
-        "nome": "PORTARIA SDS/SEDS"
-      }
-    },
-    {
-      "id": 88,
-      "nome": "PORTARIA",
-      "ativo": true,
-      "categoria": {
-        "id": 59,
-        "nome": "SECRETARIA DE SAÚDE - PORTARIA -SES"
-      }
-    },
-    {
-      "id": 92,
-      "nome": "PORTARIA",
-      "ativo": true,
-      "categoria": {
-        "id": 12,
-        "nome": "Secretaria de Defesa Social - GAB/SDS"
-      }
-    },
-    {
-      "id": 100,
-      "nome": "Portaria",
-      "ativo": true,
-      "categoria": {
-        "id": 74,
-        "nome": "DG/PCPE"
-      }
-    },
-    {
-      "id": 101,
-      "nome": "PORTARIA",
-      "ativo": true,
-      "categoria": {
-        "id": 76,
-        "nome": "MINISTÉRIO DA JUSTIÇA -MJ"
-      }
-    },
-    {
-      "id": 87,
-      "nome": "PORTARIA CONJUNTA",
-      "ativo": true,
-      "categoria": {
-        "id": 65,
-        "nome": "PORTARIA CONJUNTA SDS/SEC MULHER-PE"
-      }
-    },
-    {
-      "id": 91,
-      "nome": "PORTARIA CONJUNTA",
-      "ativo": true,
-      "categoria": {
-        "id": 68,
-        "nome": "SAD/FUNAPE"
-      }
-    },
-    {
-      "id": 75,
-      "nome": "Portaria GGPOC",
-      "ativo": true,
-      "categoria": {
-        "id": 49,
-        "nome": "Secretaria de Defesa Social - GGPOC"
-      }
-    },
-    {
-      "id": 72,
-      "nome": "Portaria GGPOC/SDS",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 98,
-      "nome": "PORTARIA NORMATIVA",
-      "ativo": true,
-      "categoria": {
-        "id": 74,
-        "nome": "DG/PCPE"
-      }
-    },
-    {
-      "id": 85,
-      "nome": "PORTARIA SEGI",
-      "ativo": true,
-      "categoria": {
-        "id": 42,
-        "nome": "Secretaria de Defesa Social - SEGI/SDS"
-      }
-    },
-    {
-      "id": 10,
-      "nome": "Provimento Correicional",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 74,
-      "nome": "RECOMENDAÇÃO CONJUNTA",
-      "ativo": true,
-      "categoria": {
-        "id": 7,
-        "nome": "Corregedoria Geral - COR GER"
-      }
-    },
-    {
-      "id": 70,
-      "nome": "Resolução",
-      "ativo": true,
-      "categoria": {
-        "id": 10,
-        "nome": "Polícia Civil - GAB/PCPE"
-      }
-    },
-    {
-      "id": 77,
-      "nome": "Resolução",
-      "ativo": true,
-      "categoria": {
-        "id": 50,
-        "nome": "Câmara de Política Financeira -CPF"
-      }
-    },
-    {
-      "id": 81,
-      "nome": "RESOLUÇÃO",
-      "ativo": true,
-      "categoria": {
-        "id": 55,
-        "nome": "ASSEMBLEIA LEGISLATIVA"
-      }
-    },
-    {
-      "id": 90,
-      "nome": "TERMO DE COOPERAÇÃO",
-      "ativo": true,
-      "categoria": {
-        "id": 16,
-        "nome": "Ministério Público de Pernambuco - MPPE"
-      }
+  {
+    "id": 73,
+    "nome": " GGPOC",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
     }
-  ]
+  },
+  {
+    "id": 93,
+    "nome": "ANEXO PESPCPE",
+    "ativo": true,
+    "categoria": {
+      "id": 67,
+      "nome": "Polícia Civil - PCPE"
+    }
+  },
+  {
+    "id": 17,
+    "nome": "Ato",
+    "ativo": true,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 76,
+    "nome": "Ato",
+    "ativo": true,
+    "categoria": {
+      "id": 2,
+      "nome": "Poder Executivo Estadual"
+    }
+  },
+  {
+    "id": 15,
+    "nome": "Decreto",
+    "ativo": true,
+    "categoria": {
+      "id": 2,
+      "nome": "Poder Executivo Estadual"
+    }
+  },
+  {
+    "id": 71,
+    "nome": "EDITAL",
+    "ativo": true,
+    "categoria": {
+      "id": 11,
+      "nome": "Secretaria de Administração - SAD"
+    }
+  },
+  {
+    "id": 96,
+    "nome": "EDITAL ",
+    "ativo": false,
+    "categoria": {
+      "id": 69,
+      "nome": "EDITAL - SDS"
+    }
+  },
+  {
+    "id": 97,
+    "nome": "Edital",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
+    }
+  },
+  {
+    "id": 80,
+    "nome": "EMENDA DA CONSTITUIÇÃO",
+    "ativo": true,
+    "categoria": {
+      "id": 54,
+      "nome": "EMENDA DA CONSTITUIÇÃO"
+    }
+  },
+  {
+    "id": 89,
+    "nome": "Extrato de Contrato",
+    "ativo": true,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 31,
+    "nome": "Instrução Normativa",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 32,
+    "nome": "Instrução Normativa",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
+    }
+  },
+  {
+    "id": 33,
+    "nome": "Instrução Normativa",
+    "ativo": true,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 34,
+    "nome": "Instrução Normativa",
+    "ativo": true,
+    "categoria": {
+      "id": 11,
+      "nome": "Secretaria de Administração - SAD"
+    }
+  },
+  {
+    "id": 99,
+    "nome": "INSTRUÇÃO NORMATIVA",
+    "ativo": true,
+    "categoria": {
+      "id": 75,
+      "nome": "FUNAPE"
+    }
+  },
+  {
+    "id": 95,
+    "nome": "LEI",
+    "ativo": true,
+    "categoria": {
+      "id": 71,
+      "nome": "PODER EXECUTIVO FEDERAL"
+    }
+  },
+  {
+    "id": 1,
+    "nome": "Lei Complementar",
+    "ativo": true,
+    "categoria": {
+      "id": 1,
+      "nome": "Poder Legislativo Estadual"
+    }
+  },
+  {
+    "id": 94,
+    "nome": "LEI FEDERAL",
+    "ativo": true,
+    "categoria": {
+      "id": 55,
+      "nome": "ASSEMBLEIA LEGISLATIVA"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Lei Ordinária",
+    "ativo": true,
+    "categoria": {
+      "id": 1,
+      "nome": "Poder Legislativo Estadual"
+    }
+  },
+  {
+    "id": 11,
+    "nome": "Manual de Correições",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 24,
+    "nome": "Parecer",
+    "ativo": true,
+    "categoria": {
+      "id": 13,
+      "nome": "Procuradoria Geral do Estado - PGE"
+    }
+  },
+  {
+    "id": 41,
+    "nome": "Parecer",
+    "ativo": true,
+    "categoria": {
+      "id": 21,
+      "nome": "Gerência Geral de Assuntos Jurídicos - GGAJ/SDS"
+    }
+  },
+  {
+    "id": 29,
+    "nome": "Pareceres da Gerência Geral de Assuntos Jurídicos",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 11,
+      "nome": "Secretaria de Administração - SAD"
+    }
+  },
+  {
+    "id": 7,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
+    }
+  },
+  {
+    "id": 9,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 35,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 16,
+      "nome": "Ministério Público de Pernambuco - MPPE"
+    }
+  },
+  {
+    "id": 36,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 13,
+      "nome": "Procuradoria Geral do Estado - PGE"
+    }
+  },
+  {
+    "id": 37,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 17,
+      "nome": "Secretaria de Desenvolvimento Social e Direitos Humanos - SDSDH"
+    }
+  },
+  {
+    "id": 38,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 18,
+      "nome": "DETRAN-PE"
+    }
+  },
+  {
+    "id": 39,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 15,
+      "nome": "Órgãos em conjunto"
+    }
+  },
+  {
+    "id": 40,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 20,
+      "nome": "Órgãos em Conjunto - SAD / SEFAZ / SDS"
+    }
+  },
+  {
+    "id": 42,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 22,
+      "nome": "Grupo de Trabalho Operação São João 2016"
+    }
+  },
+  {
+    "id": 46,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 40,
+      "nome": "Órgãos em Conjunto - SAD / SETUREL"
+    }
+  },
+  {
+    "id": 47,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 25,
+      "nome": "Órgãos em Conjunto - SARE / SDS"
+    }
+  },
+  {
+    "id": 48,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 26,
+      "nome": "Órgãos em Conjunto - SAD / SDS"
+    }
+  },
+  {
+    "id": 49,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 27,
+      "nome": "Órgãos em Conjunto - SAD / IRH"
+    }
+  },
+  {
+    "id": 50,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 28,
+      "nome": "Órgãos em Conjunto - PGJ"
+    }
+  },
+  {
+    "id": 51,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 29,
+      "nome": "Órgãos em Conjunto - SDS / SES"
+    }
+  },
+  {
+    "id": 52,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 30,
+      "nome": "Órgãos em Conjunto - SAD / SEFAZ"
+    }
+  },
+  {
+    "id": 53,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 31,
+      "nome": "Órgãos em Conjunto - SEFAZ / SDS"
+    }
+  },
+  {
+    "id": 54,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 32,
+      "nome": "Órgãos em conjunto: GPE / DGOPJ / PCPE"
+    }
+  },
+  {
+    "id": 55,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 33,
+      "nome": "Órgãos em Conjunto - SAD / SDS / PCPE"
+    }
+  },
+  {
+    "id": 56,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 34,
+      "nome": "Órgãos em Conjunto - SAD / SEFAZ / PCPE"
+    }
+  },
+  {
+    "id": 57,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 35,
+      "nome": "Órgãos em Conjunto - SDS / SCJ"
+    }
+  },
+  {
+    "id": 58,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 36,
+      "nome": "Órgãos em Conjunto - SDS / CAMIL / SEDSDH"
+    }
+  },
+  {
+    "id": 59,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 37,
+      "nome": "Órgãos em Conjunto - SEDSDH / SDS / SAG"
+    }
+  },
+  {
+    "id": 60,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 38,
+      "nome": "Órgãos em Conjunto - SAD / SEFAZ / SERES"
+    }
+  },
+  {
+    "id": 61,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 39,
+      "nome": "Órgãos em Conjunto - SDS / SEPLAG / ATI"
+    }
+  },
+  {
+    "id": 62,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 41,
+      "nome": "Órgãos em Conjunto - SEPLAG / SDS"
+    }
+  },
+  {
+    "id": 63,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 42,
+      "nome": "Secretaria de Defesa Social - SEGI/SDS"
+    }
+  },
+  {
+    "id": 64,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 44,
+      "nome": "Polícia Civil - UNICEV/PCPE"
+    }
+  },
+  {
+    "id": 65,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 45,
+      "nome": "Polícia Civil - DIRH/PCPE"
+    }
+  },
+  {
+    "id": 66,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 46,
+      "nome": "Polícia Civil - GCOI 1/PCPE"
+    }
+  },
+  {
+    "id": 67,
+    "nome": "Portaria",
+    "ativo": false,
+    "categoria": null
+  },
+  {
+    "id": 68,
+    "nome": "Portaria ",
+    "ativo": false,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 69,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 47,
+      "nome": "Secretaria da Controladoria-Geral do Estado - SCGE"
+    }
+  },
+  {
+    "id": 78,
+    "nome": "Portaria ",
+    "ativo": true,
+    "categoria": {
+      "id": 51,
+      "nome": "Órgãos em Conjunto - SEDSDH/SDS"
+    }
+  },
+  {
+    "id": 79,
+    "nome": "Portaria ",
+    "ativo": true,
+    "categoria": {
+      "id": 53,
+      "nome": "ÓRGÃOS EM CONJUNTO - SES/SDEC"
+    }
+  },
+  {
+    "id": 82,
+    "nome": "PORTARIA",
+    "ativo": true,
+    "categoria": {
+      "id": 56,
+      "nome": "PORTARIA SEPLAG"
+    }
+  },
+  {
+    "id": 83,
+    "nome": "Portaria ",
+    "ativo": true,
+    "categoria": {
+      "id": 60,
+      "nome": "Secretaria de Esportes - SEE"
+    }
+  },
+  {
+    "id": 84,
+    "nome": "Portaria ",
+    "ativo": true,
+    "categoria": {
+      "id": 62,
+      "nome": "Secretaria de Educação e Esportes - SEE"
+    }
+  },
+  {
+    "id": 86,
+    "nome": "PORTARIA",
+    "ativo": true,
+    "categoria": {
+      "id": 64,
+      "nome": "PORTARIA SDS/SEDS"
+    }
+  },
+  {
+    "id": 88,
+    "nome": "PORTARIA",
+    "ativo": true,
+    "categoria": {
+      "id": 59,
+      "nome": "SECRETARIA DE SAÚDE - PORTARIA -SES"
+    }
+  },
+  {
+    "id": 92,
+    "nome": "PORTARIA",
+    "ativo": true,
+    "categoria": {
+      "id": 12,
+      "nome": "Secretaria de Defesa Social - GAB/SDS"
+    }
+  },
+  {
+    "id": 100,
+    "nome": "Portaria",
+    "ativo": true,
+    "categoria": {
+      "id": 74,
+      "nome": "DG/PCPE"
+    }
+  },
+  {
+    "id": 101,
+    "nome": "PORTARIA",
+    "ativo": true,
+    "categoria": {
+      "id": 76,
+      "nome": "MINISTÉRIO DA JUSTIÇA -MJ"
+    }
+  },
+  {
+    "id": 87,
+    "nome": "PORTARIA CONJUNTA",
+    "ativo": true,
+    "categoria": {
+      "id": 65,
+      "nome": "PORTARIA CONJUNTA SDS/SEC MULHER-PE"
+    }
+  },
+  {
+    "id": 91,
+    "nome": "PORTARIA CONJUNTA",
+    "ativo": true,
+    "categoria": {
+      "id": 68,
+      "nome": "SAD/FUNAPE"
+    }
+  },
+  {
+    "id": 75,
+    "nome": "Portaria GGPOC",
+    "ativo": true,
+    "categoria": {
+      "id": 49,
+      "nome": "Secretaria de Defesa Social - GGPOC"
+    }
+  },
+  {
+    "id": 72,
+    "nome": "Portaria GGPOC/SDS",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 98,
+    "nome": "PORTARIA NORMATIVA",
+    "ativo": true,
+    "categoria": {
+      "id": 74,
+      "nome": "DG/PCPE"
+    }
+  },
+  {
+    "id": 85,
+    "nome": "PORTARIA SEGI",
+    "ativo": true,
+    "categoria": {
+      "id": 42,
+      "nome": "Secretaria de Defesa Social - SEGI/SDS"
+    }
+  },
+  {
+    "id": 10,
+    "nome": "Provimento Correicional",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 74,
+    "nome": "RECOMENDAÇÃO CONJUNTA",
+    "ativo": true,
+    "categoria": {
+      "id": 7,
+      "nome": "Corregedoria Geral - COR GER"
+    }
+  },
+  {
+    "id": 70,
+    "nome": "Resolução",
+    "ativo": true,
+    "categoria": {
+      "id": 10,
+      "nome": "Polícia Civil - GAB/PCPE"
+    }
+  },
+  {
+    "id": 77,
+    "nome": "Resolução",
+    "ativo": true,
+    "categoria": {
+      "id": 50,
+      "nome": "Câmara de Política Financeira -CPF"
+    }
+  },
+  {
+    "id": 81,
+    "nome": "RESOLUÇÃO",
+    "ativo": true,
+    "categoria": {
+      "id": 55,
+      "nome": "ASSEMBLEIA LEGISLATIVA"
+    }
+  },
+  {
+    "id": 90,
+    "nome": "TERMO DE COOPERAÇÃO",
+    "ativo": true,
+    "categoria": {
+      "id": 16,
+      "nome": "Ministério Público de Pernambuco - MPPE"
+    }
+  },
+  {
+    "id": 102,
+    "nome": "carros 5",
+    "categoria": "DETRAN-PE"
+  }
+]
