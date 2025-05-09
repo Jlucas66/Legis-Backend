@@ -27,22 +27,16 @@
     }
   },
   {
-    "id": 76,
     "nome": "Ato",
-    "ativo": true,
-    "categoria": {
-      "id": 2,
-      "nome": "Poder Executivo Estadual"
-    }
+    "categoria": "PORTARIA - SES",
+    "id": 76,
+    "ativo": true
   },
   {
-    "id": 15,
     "nome": "Decreto",
-    "ativo": true,
-    "categoria": {
-      "id": 2,
-      "nome": "Poder Executivo Estadual"
-    }
+    "categoria": "FUNAPE",
+    "id": 15,
+    "ativo": true
   },
   {
     "id": 71,

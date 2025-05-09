@@ -82,13 +82,13 @@ exports.atualizarDocumento = (req, res) => {
         const documentos = exports.lerDocumentos();
         const salvarDocumentos = exports.salvarDocumentos;
 
-        const documentoIndex = documentos.findIndex(documento => documento.id === id);
+        const documentoIndex = documentos.findIndex(documentos => documentos.id === id);
         if (documentoIndex === -1) {
             return res.status(404).json({ message: "Documento não encontrado." });
         }
 
-        const { nome, ativo, categoria } = req.body;
-        documentos[documentoIndex] = { nome, ativo, categoria, id:parseInt(id) };
+        const { nome, categoria } = req.body;
+        documentos[documentoIndex] = { nome, categoria, id:parseInt(id) };
 
         salvarDocumentos(documentos);
         res.json(documentos[documentoIndex]);
