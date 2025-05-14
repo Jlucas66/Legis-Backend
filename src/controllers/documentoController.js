@@ -39,7 +39,10 @@ exports.adicionarDocumento = (req, res) => {
         const novaDocumento = {
             id: documentos.length > 0 ? Math.max(...documentos.map(d => d.id)) + 1 : 1,
             nome,
-            categoria
+            categoria: {
+                id: categoria.id,
+                nome: categoria.nome,
+            }
         };
 
         documentos.push(novaDocumento);
@@ -66,7 +69,7 @@ exports.buscarDocumentoPorId = (req, res) => {
             id: documento.id,
             nome: documento.nome,
             ativo: documento.ativo ? "Ativo" : "Inativo",
-            categoria: documento.categoria?.nome || "N/A",
+            categoria: documento.categoria?.nome || { id: null, nome: "N/A" },
         };
 
         res.json(documentoFiltradoPorID);
@@ -78,7 +81,7 @@ exports.buscarDocumentoPorId = (req, res) => {
 
 exports.atualizarDocumento = (req, res) => {
     try {
-        const id = parseInt(req.params.id);
+        console.log(req.params.id);
         const documentos = exports.lerDocumentos();
         const salvarDocumentos = exports.salvarDocumentos;
 
@@ -86,9 +89,19 @@ exports.atualizarDocumento = (req, res) => {
         if (documentoIndex === -1) {
             return res.status(404).json({ message: "Documento não encontrado." });
         }
+        console.log('documentoIndex', documentoIndex.id);
 
         const { nome, categoria } = req.body;
-        documentos[documentoIndex] = { nome, categoria, id:parseInt(id) };
+        documentos[documentoIndex] = { 
+            id:parseInt(id),
+            nome, 
+            ativo: true,
+            categoria: {
+                id: categoria.id,
+                nome: categoria.nome,
+            } 
+        
+        };
 
         salvarDocumentos(documentos);
         res.json(documentos[documentoIndex]);
