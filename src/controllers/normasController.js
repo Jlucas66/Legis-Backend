@@ -32,7 +32,7 @@ exports.listarNormas = (req, res) => {
             numero: normas.numero,
             tipo: normas.tipoCategoria?.nome || "N/A",
             statusDisponivel: normas.statusDisponivel,
-            orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
+            categoria: normas.tipoCategoria?.categoria?.nome|| "N/A",
             link: normas.link
         }));
         res.json(normasFiltradas.filter(normas => normas.statusDisponivel === true));
@@ -53,7 +53,7 @@ exports.listarNormasAdmin = (req, res) => {
             ementa: normas.ementa,
             numero: normas.numero,
             tipo: normas.tipoCategoria?.nome || "N/A",
-            orgao: normas.tipoCategoria?.categoria?.nome|| "N/A",
+            categoria: normas.tipoCategoria?.categoria?.nome|| "N/A",
             ativo: normas.ativo,
             statusDisponivel: normas.statusDisponivel ? "Ativo" : "Inativo",
             link: normas.link,
