@@ -35,6 +35,7 @@ exports.listarNormas = (req, res) => {
             categoria: normas.tipoCategoria?.categoria?.nome|| "N/A",
             link: normas.link
         }));
+        console.log('Normas filtradas:', normasFiltradas);
         res.json(normasFiltradas.filter(normas => normas.statusDisponivel === true));
     } catch (error) {
         console.error("Erro ao listar normas:", error);
@@ -96,8 +97,8 @@ exports.listarNormaPorId = (req, res) => {
 
 exports.adicionarNorma = (req, res) => {
     try{
-        const { orgao, tipo, numero, ementa, status, data } = req.body;
-        if (!orgao || !numero || !ementa || !tipo || !data) {
+        const { categoria, tipo, numero, ementa, status, data } = req.body;
+        if (!categoria || !numero || !ementa || !tipo || !data) {
             return res.status(400).json({ message: "Preencha todos os campos obrigatórios." });
         }
 
@@ -105,7 +106,7 @@ exports.adicionarNorma = (req, res) => {
         const salvarNormas = exports.salvarNormas;
         const novaNorma = {
             id: normas.length > 0 ? Math.max(...normas.map(n => n.id)) + 1 : 1,
-            orgao,
+            categoria,
             tipo,
             numero,
             data,
@@ -128,7 +129,7 @@ exports.buscarNormaPorNumero = (req, res) => {
     const normas = exports.lerNormas();
 
     const resultado = normas.filter(normas => {
-        return (!orgao || normas.orgao.toLowerCase().includes(orgao.toLowerCase())) &&
+        return (!categoria || normas.categoria.toLowerCase().includes(categoria.toLowerCase())) &&
                (!tipo || normas.tipo.toLowerCase().includes(tipo.toLowerCase())) &&
                (!numero || normas.numero.toString() === numero.toString());
   });
@@ -147,9 +148,9 @@ exports.modificarNorma = (req, res) => {
       return res.status(404).json({ erro: 'Norma não encontrada.' });
     }
   
-    const { orgao, tipo, numero, data, ementa, ativo, statusDisponivel } = req.body;
+    const { categoria, tipo, numero, data, ementa, ativo, statusDisponivel } = req.body;
   
-    normas[index] = { id, orgao, tipo, numero, data, ementa, ativo, statusDisponivel };
+    normas[index] = { id, categoria, tipo, numero, data, ementa, ativo, statusDisponivel };
     salvarNormas(normas);
   
     res.json(normas[index]);

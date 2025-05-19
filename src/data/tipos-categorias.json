@@ -706,5 +706,14 @@
     "id": 103,
     "nome": "doc35",
     "categoria": {}
+  },
+  {
+    "id": 104,
+    "nome": "doc01",
+    "categoria": {
+      "id": 75,
+      "nome": "FUNAPE"
+    },
+    "ativo": true
   }
 ]

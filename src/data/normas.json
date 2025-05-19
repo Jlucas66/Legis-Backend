@@ -52608,5 +52608,18 @@
     "ativo": false,
     "statusDisponivel": true,
     "ementa": "teste de adição de norma"
+  },
+  {
+    "id": 3156,
+    "categoria": {
+      "id": null,
+      "nome": ""
+    },
+    "tipo": "z\\zx\\zx",
+    "numero": "4545",
+    "data": "2025-12-15",
+    "ativo": false,
+    "statusDisponivel": true,
+    "ementa": "aaaaaaaaaaaaa"
   }
 ]
