@@ -82,7 +82,7 @@ exports.listarNormaPorId = (req, res) => {
             ementa: norma.ementa,
             numero: norma.numero,
             tipo: norma.tipoCategoria?.nome || "N/A",
-            orgao: norma.tipoCategoria?.categoria?.nome|| "N/A",
+            categoria: norma.tipoCategoria?.categoria?.nome|| "N/A",
             ativo: norma.ativo,
             statusDisponivel: norma.statusDisponivel ? "Ativo" : "Inativo",
             link: norma.link
@@ -106,14 +106,17 @@ exports.adicionarNorma = (req, res) => {
         const salvarNormas = exports.salvarNormas;
         const novaNorma = {
             id: normas.length > 0 ? Math.max(...normas.map(n => n.id)) + 1 : 1,
-            categoria,
             tipo,
             numero,
             data,
             status,
             ativo: true,
             statusDisponivel: true,
-            ementa
+            ementa,
+            categoria:{
+                id: categoria.id,
+                nome: categoria.nome,
+            }
         };
         normas.push(novaNorma);
         salvarNormas(normas);
@@ -150,7 +153,12 @@ exports.modificarNorma = (req, res) => {
   
     const { categoria, tipo, numero, data, ementa, ativo, statusDisponivel } = req.body;
   
-    normas[index] = { id, categoria, tipo, numero, data, ementa, ativo, statusDisponivel };
+    normas[index] = { id: parseInt(id), tipo, numero, data, ementa, ativo, statusDisponivel,
+        categoria: {
+            id: categoria.id,
+            nome: categoria.nome,
+        }
+     };
     salvarNormas(normas);
   
     res.json(normas[index]);

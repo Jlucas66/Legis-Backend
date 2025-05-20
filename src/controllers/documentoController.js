@@ -81,7 +81,7 @@ exports.buscarDocumentoPorId = (req, res) => {
 
 exports.atualizarDocumento = (req, res) => {
     try {
-        console.log(req.params.id);
+        const id = parseInt(req.params.id);
         const documentos = exports.lerDocumentos();
         const salvarDocumentos = exports.salvarDocumentos;
 

@@ -36,9 +36,13 @@
     }
   },
   {
+    "id": 15,
     "nome": "Decreto",
-    "categoria": "DETRAN-PE",
-    "id": 15
+    "ativo": true,
+    "categoria": {
+      "id": 75,
+      "nome": "FUNAPE"
+    }
   },
   {
     "id": 71,
@@ -713,6 +717,23 @@
     "categoria": {
       "id": 75,
       "nome": "FUNAPE"
+    },
+    "ativo": true
+  },
+  {
+    "id": 105,
+    "nome": "aaaaa",
+    "categoria": {
+      "id": 75,
+      "nome": "FUNAPE"
+    }
+  },
+  {
+    "id": 106,
+    "nome": "asdasasf",
+    "categoria": {
+      "id": 69,
+      "nome": "EDITAL - SDS"
     },
     "ativo": true
   }

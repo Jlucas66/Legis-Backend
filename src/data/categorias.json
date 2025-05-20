@@ -21,7 +21,7 @@
   },
   {
     "nome": "DETRAN-PE",
-    "ativo": "Ativo",
+    "ativo": true,
     "id": 18
   },
   {
@@ -342,6 +342,11 @@
   {
     "id": 77,
     "nome": "aaaa",
+    "ativo": "Ativo"
+  },
+  {
+    "id": 78,
+    "nome": "aaaaa",
     "ativo": "Ativo"
   }
 ]
